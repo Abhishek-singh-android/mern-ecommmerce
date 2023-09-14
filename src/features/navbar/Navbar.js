@@ -27,6 +27,8 @@ function classNames(...classes) {
 }
 
 function NavBar({ children }) {
+
+
   return (
     <>
       <div className="min-h-full">
