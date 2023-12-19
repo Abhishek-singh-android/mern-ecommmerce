@@ -5,6 +5,7 @@ import {
   incrementAsync,
   selectCount,
 } from '../../counter/CounterSlice';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const count = useSelector(selectCount);
@@ -46,7 +47,7 @@ export default function Login() {
 
     <p class="mt-10 text-center text-sm text-gray-500">
       Not a member?
-      <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Create an account</a>
+      <Link href="/signup" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Create an account</Link>
     </p>
   </div>
 </div>
